@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* 공통 설정 */
+.bg_h2 {
+    background: url(../images/title_bg01.jpg);
+    width: 100%;
+    height: 180px;
+}
+
+.bg_h2 h2 {
+    font-size: 48px;
+    color: #fff;
+    line-height: 180px;
+    text-align: center;
+    margin: 120px 0 0;
+}
+.guide {
+    font-size: 14px;
+    margin: 20px 0;
+}
+.pro_tab {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.pro_tab li {
+    display: inline-block;
+    padding: 13px 100px;
+    color: #999;
+    cursor: pointer;
+}
+.pro_tab li.on {
+    /* color: #777; */
+    font-weight: bold;
+}
+.pro_img {
+    margin-bottom: 100px;
+}
+.pro_img p {
+    display: none;
+    width: 28%;
+    margin: 20px;
+}
+.pro_img p.visible {
+    display: inline-block;
+}

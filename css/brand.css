@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+.dna h3 {
+    font-size: 25px;
+    text-align: center;
+    margin: 70px 0;
+}
+.dna ul {
+    text-align: center;
+}
+.dna ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 50px;
+}
+.dna ul li > span:nth-of-type(1) {
+    font-size: 25px;
+    font-weight: bold;
+}
+.dna ul li:nth-of-type(1) > span:nth-of-type(1) em {
+    color: #d75a4a;
+}
+.dna ul li:nth-of-type(2) > span:nth-of-type(1) em {
+    color: #556080;
+}
+.dna ul li:nth-of-type(3) > span:nth-of-type(1) em {
+    color: #4482c3;
+}
+
+.brand1 {
+    position: relative;
+    height: 300px;
+    margin: 70px 0;
+    width: 100%;
+    background: url(../images/brand_bg1.png) no-repeat;
+    background-size: cover;
+}
+.brand1:after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100px;
+    content: '';
+    width: 100%;
+    background: #fff;
+}
+.brand1 > div:nth-of-type(1) {
+    position: absolute;
+    top: 45%;
+    left: -3%;
+    opacity: 0.7;
+}
+.brand1 > div:nth-of-type(2) {
+    position: absolute;
+    top: 15%;
+    right: -3%;
+    opacity: 0.7;
+}
+.brand1 .br_text {
+    position: absolute;
+    top: 20%;
+    left: 33%;
+    color: #fff;.dna ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 50px;
+}
+}
+.brand1 .br_text > span:nth-of-type(1){
+    display: block;
+    font-size: 12px;
+}
+.brand1 .br_text > span:nth-of-type(2){
+    font-size: 30px;
+    text-shadow: 3px 3px #333;
+}
+.brand1 .br_text > div {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.brand2 {
+    position: relative;
+    height: 300px;
+    margin: 70px 0;
+    width: 100%;
+    background: url(../images/brand_bg2.png) no-repeat;
+    background-size: cover;
+}
+.brand2:after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100px;
+    content: '';
+    width: 100%;
+    background: #fff;
+}
+.brand2 > div:nth-of-type(1) {
+    position: absolute;
+    top: 45%;
+    left: -3%;
+    opacity: 0.7;
+}
+.brand2 > div:nth-of-type(1) img {
+    height: 235px;
+}
+.brand2 > div:nth-of-type(2) {
+    position: absolute;
+    top: 15%;
+    right: -3%;
+    opacity: 0.7;
+}
+.brand2 .br_text {
+    position: absolute;
+    top: 20%;
+    left: 33%;
+    color: #fff;
+}
+.brand2 .br_text > span:nth-of-type(1){
+    display: block;
+    font-size: 12px;
+}
+.brand2 .br_text > span:nth-of-type(2){
+    font-size: 30px;
+    text-shadow: 3px 3px #333;
+}
+.brand2 .br_text > div {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.brand3 {
+    position: relative;
+    height: 300px;
+    margin: 70px 0;
+    width: 100%;
+    background: url(../images/brand_bg3.png) no-repeat;
+    background-size: cover;
+}
+.brand3:after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100px;
+    content: '';
+    width: 100%;
+    background: #fff;
+}
+.brand3 > div:nth-of-type(1) {
+    position: absolute;
+    top: -20%;
+    left: -3%;
+    opacity: 0.7;
+}
+.brand3 > div:nth-of-type(2) {
+    position: absolute;
+    top: 15%;
+    right: -3%;
+    opacity: 0.7;
+}
+.brand3 .br_text {
+    position: absolute;
+    top: 20%;
+    left: 33%;
+    color: #fff;
+}
+.brand3 .br_text > span:nth-of-type(1){
+    display: block;
+    font-size: 12px;
+}
+.brand3 .br_text > span:nth-of-type(2){
+    font-size: 30px;
+    text-shadow: 3px 3px #333;
+}
+.brand3 .br_text > div {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 680px) {
+    .dna ul li {
+        display: inline-block;
+        text-align: center;
+        margin: 0 50px 30px;
+    }
+    .brand1 > div:nth-of-type(1),
+    .brand2 > div:nth-of-type(1),
+    .brand3 > div:nth-of-type(1) {
+        position: absolute;
+        top: 45%;
+        left: -3%;
+        opacity: 0.7;
+        display: none;
+    }
+    .brand1 > div:nth-of-type(2),
+    .brand2 > div:nth-of-type(2),
+    .brand3 > div:nth-of-type(2){
+        position: absolute;
+        top: 15%;
+        right: -3%;
+        opacity: 0.7;
+        display: none;
+    }
+    .brand1 .br_text,
+    .brand2 .br_text,
+    .brand3 .br_text {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        color: #fff;
+    }
+    .dna .br_text .st {
+        color: red !important;
+    }
+}

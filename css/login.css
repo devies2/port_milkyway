@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+@import url(./common.css);
+@import url(./reset.css);
+
+/* 로그인 페이지 */
+
+#login_section {
+    position: relative; height: 950px; padding-top: 300px;
+    font-family: 'Nanum Gothic', sans-serif;
+    background: url(../images/under-sky.jpg) no-repeat;
+    background-size: cover;
+    background-position: center 60%;   
+}
+
+#login_section .row {
+    /* height: 500px; */
+    max-width: 500px;
+    background-color: rgba(255,255,255,0.6);
+    position: relative;
+}
+
+#login_section .login-box {
+    padding-top: 50px;
+}
+
+#login_section h2 {
+    padding-left: 10%;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #222;
+    text-shadow: 0 0 5px #fff;
+}
+
+#login_section fieldset {
+    margin: 0 auto;
+    border: 1px solid #656;
+    width: 80%;
+    padding: 40px 0 30px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#login_section fieldset label {
+    display: inline-block;
+    width: 30%;
+    /* margin-right: 20px; */
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#login_section fieldset input {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+#login_section fieldset button {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10%;
+    /* width: 50%; */
+    font-size: 15px;    
+    background: #222;
+    padding: 8px 30px;
+    color: #fff;
+}
+#login_section .login-box > div > div {
+    text-align: right;
+    margin-top: 10px;
+    padding-right: 10%;
+}
+#login_section .login-box span {
+    display: inline-block;
+    margin-bottom: 30px;
+    /* background: slateblue; */
+    font-size: 13px;
+    color: #222;
+}
+
+#login_section .login-box span:nth-of-type(2) {
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 680px) {
+    #login_section {
+        position: relative; height: 660px; padding-top: 160px;
+        font-family: 'Nanum Gothic', sans-serif;
+        background: url(../images/under-sky.jpg) no-repeat;
+        background-size: cover;
+        background-position: center 60%;   
+    }
+    #login_section .row {
+        /* height: 500px; */
+        /* max-width: 320px; */
+        width: 90%;
+        background-color: rgba(255,255,255,0.6);
+        position: relative;
+    }
+    #login_section .login-box {
+        padding-top: 30px;
+    }
+    
+    #login_section fieldset label {
+        display: block;
+        width: 30%;
+        /* margin-right: 20px; */
+        margin-bottom: 10px;
+        margin-left: 35px;
+        font-weight: bold;
+        text-align: left;
+    }
+}

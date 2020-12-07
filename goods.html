@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milky Way</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/join.css">
+    <link rel="stylesheet" href="css/company.css">
+    <link rel="stylesheet" href="css/way.css">
+    <link rel="stylesheet" href="css/notice.css">
+    <link rel="stylesheet" href="css/goods.css">
+    <link rel="stylesheet" href="css/brand.css">
+    <link rel="stylesheet" href="./css/faq.css">
+    <link rel="stylesheet" href="./css/qna.css">
+    <link rel="stylesheet" href="css/rwd.css">
+    <!-- 플러그인, 공통 js파일 -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/slick.js"></script>
+
+
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <!-- [if lt IE 9]>
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.
+         
+         +js"></script>
+    <![endif] -->
+
+</head>
+
+<body>
+    <div id="container">
+        <section id="goods_section">
+            <div class="bg_h2">
+                <!-- <h2 class="category">BRAND</h2> -->
+                <h2 class="category">PRODUCT</h2>
+            </div>
+            <div class="row">
+                <div class="guide">
+                    <span>Home</span>
+                    <span>&gt;</span>
+                    <span>Product</span>
+                </div>
+                <div>
+                    <ul class="pro_tab">
+                        <li class="on" data-value="*">ALL</li>
+                        <li data-value="Painting">Painting</li>
+                        <li data-value="Accessory">Accessory</li>
+                        <li data-value="Tumbler">Tumbler</li>
+                    </ul>
+                </div>
+                <div class="pro_img">
+                    <p class="visible" data-filter="Painting"><img src="./images/p_1.png" alt="상품"></p>
+                    <p class="visible" data-filter="Accessory"><img src="./images/p_2.png" alt="상품"></p>
+                    <p class="visible" data-filter="Accessory"><img src="./images/p_3.png" alt="상품"></p>
+                    <p class="visible" data-filter="Painting"><img src="./images/p_4.png" alt="상품"></p>
+                    <p class="visible" data-filter="Tumbler"><img src="./images/p_5.png" alt="상품"></p>
+                    <p class="visible" data-filter="Painting"><img src="./images/p_6.png" alt="상품"></p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        let tabs = document.querySelector('.pro_tab');
+        let imgs = document.querySelectorAll('.pro_img p')
+        tabs.addEventListener('click', (e) => {
+            if (e.target.tagName == 'LI') {
+                imgs.forEach(ele => {
+                    e.target.dataset.value == ele.dataset.filter || e.target.dataset.value == '*' ? ele
+                        .classList.add('visible') : ele.classList.remove('visible')
+                });
+            } else {}
+        })
+    </script>
+</body>
+
+</html>

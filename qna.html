@@ -1,0 +1,68 @@
+<div id="container">
+    <section id="goods_section">
+        <div class="bg_h2">
+            <!-- <h2 class="category">BRAND</h2> -->
+            <h2 class="category">Q&amp;A</h2>
+        </div>
+        <div class="row">
+            <div class="guide">
+                <span>Home</span>
+                <span>&gt;</span>
+                <span>Q &amp; A</span>
+            </div>
+            <div class="qna">
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend class="blind">Q and A</legend>
+                        <ul>
+                            <li>
+                                <label for="qTitle">Title</label>
+                                <input type="text" id="qTitle">
+                            </li>
+                            <li>
+                                <label for="qName">Name</label>
+                                <input type="text" id="qName">
+                            </li>
+                            <li>
+                                <label for="qTel1">Phone</label>
+                                <input type="text" id="qTel1">
+                                <span>-</span>
+                                <input type="text" id="qTel2">
+                                <span>-</span>
+                                <input type="text" id="qTel3">
+                            </li>
+                            <li>
+                                <label for="qEmail">email</label>
+                                <input type="text" id="qEmail">
+                                <span class="dom">@</span>
+                                <select name="qDomain" id="qDomain">
+                                    <option value=""></option>
+                                    <option value="google.com">google.com</option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="daum.net">daum.net</option>
+                                    <!-- 직접입력? -->
+                                </select>
+                            </li>
+                            <li>
+                                <label for="qQuest" class="qQuestLB">Questions</label>
+                                <textarea name="qQuest" id="qQuest" cols="30" rows="10"></textarea>
+                            </li>
+                            <li>
+                                <label for="qFile">File</label>
+                                <input type="file" id="qFile">
+                            </li>
+                        </ul>
+                        <div class="btn-line">
+                            <button type="submit">
+                                확인
+                            </button>
+                            <button type="reset">
+                                취소
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>

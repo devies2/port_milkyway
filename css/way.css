@@ -1,0 +1,47 @@
+@charset "utf-8";
+.way_section {
+    margin: 60px 0;
+}
+#way_section h2 {
+    text-align: center;
+    font-size: 48px;
+    margin: 120px 0;
+    font-weight: bold;
+}
+#way_section .h3 {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0;
+    padding: 30px 0;
+}
+.map_main {
+    text-align: center;
+}
+.icon-map {
+    width: 80%;
+    margin: 50px auto;
+}
+.icon-map li {
+    float: left;
+    margin: 0 100px 30px 100px;
+    /* margin-right: 250px; */
+}
+.icon-map li span {
+    font-size: 20px;
+    padding-right: 5px;
+}
+.icon-map li p {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 680px){
+    .map_main iframe {
+        width: 100%;
+    }
+    .icon-map li {
+        float: none;
+        margin: 0 0 30px 30px;
+        /* margin-right: 250px; */
+        text-align: left;
+    }
+}

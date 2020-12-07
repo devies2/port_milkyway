@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+/* 
+.row { width: 1000px;} */
+.noticePage {
+    padding: 136px 0;
+    text-align: center;
+}
+
+.noticePage h2 {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0;
+    padding: 30px 0;
+}
+
+#sbox {
+    height: 30px;
+    border: 1px solid #ddd;
+    width: 70px;
+    text-align: center;
+}
+
+#keyword {
+    height: 30px; width: 300px; text-indent: 1em;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+}
+input[type='submit'] {
+    height: 30px; 
+    /* background: #ddd; */
+    padding: 0 13px; 
+    border-radius: 2px;
+    vertical-align: middle;
+    color: #fff;
+    background: #000;
+    font-weight: bold;
+
+}
+
+#noticeTable td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#noticeTable {
+    margin-top: 20px;
+}
+
+#noticeTable table {
+    width: 80%; 
+    margin: 0 auto;
+}
+#noticeTable col:nth-of-type(1) {width: 10%;}
+#noticeTable col:nth-child(2) {width: 45%;}
+#noticeTable col:nth-child(3) {width: 15%; }
+#noticeTable col:nth-child(4) {width: 15%;}
+#noticeTable col:nth-child(5) {width: 15%;}
+#noticeTable th, #noticeTable td {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background: #f2f2f2;
+    border-top: 1px solid #999;
+    font-weight: bold;
+}
+
+tbody tr:hover {
+    background: #f2f2f2;
+}
+
+.numlist {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 16px;
+}
+
+.numlist span {
+    padding: 0px 20px; 
+    display: inline-block;
+    font-size: 20px;
+    color: #555;
+}
+.numlist a {
+    display: inline-block;
+    padding: 5px 11px;
+    border: 1px solid #eee;
+}
+
+.noticePage .numlist a:hover {
+    background: #eee;
+}
+
+.noticePage .numlist a.on {
+    background: #eee;
+}
+
+@media screen and (max-width: 680px){
+    #noticeTable table {
+        width: 100%; 
+        margin: 0 auto;
+        margin: 0 auto;
+    }
+    #noticeTable col:nth-of-type(1) {width: 20%;}
+    #noticeTable col:nth-child(2) {width: 50%;}
+    #noticeTable col:nth-child(3) {width: 20%; }
+    #noticeTable col:nth-child(4) {width: 0%;}
+    #noticeTable col:nth-child(5) {width: 0%;}
+    thead th:nth-child(4){
+        display: none;
+    }
+    thead th:nth-child(5){
+        display: none;
+    }
+    tbody td:nth-child(4){
+        display: none;
+    }
+
+    tbody td:nth-child(5){
+        display: none;
+    }
+    .numlist a:nth-of-type(6){display: none;}
+    .numlist a:nth-of-type(7){display: none;}
+    .numlist a:nth-of-type(8){display: none;}
+    .numlist a:nth-of-type(9){display: none;}
+    .numlist a:nth-of-type(10){display: none;}
+    .numlist span {
+        padding: 0; 
+        display: inline-block;
+        font-size: 20px;
+        color: #555;
+    }
+        
+    #keyword {
+        height: 30px; width: 50%; text-indent: 1em;
+        vertical-align: middle;
+        border: 1px solid #ddd;
+    }
+}
+

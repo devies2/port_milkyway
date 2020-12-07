@@ -1,0 +1,111 @@
+@charset "utf-8";
+.qna {
+    max-width: 70%;
+    margin: 60px auto;
+}
+.qna form li:first-child {
+    border-top: 2px solid #3b3b3b;
+}
+.qna form li {
+    margin: 10px 0;
+    border-bottom: 1px solid #ebebeb;
+    padding: 10px 20px;
+}
+.qna form label {
+    vertical-align: top;
+    width: 100px;
+    display: inline-block;
+}
+.qna form input {
+    border: none;
+    background: #efecec;
+    padding: 6px;
+    width: 80px;
+}
+
+.qna form textarea {
+    border: none;
+    background: #efecec;
+    padding: 6px;
+    width: 300px;
+}
+
+.qna form input[type=file]{
+    background: none;
+    width: 50%;
+}
+.qna form .btn-line {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.qna form .btn-line button[type=submit]{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background: black;
+    color: white;
+}
+.qna form .btn-line button[type=reset]{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4b4a4a;
+    color: white;
+}
+@media screen and (max-width: 680px) {
+    .qna {
+        max-width: 90%;
+        margin: 60px auto;
+    }
+    .qna form li {
+        margin: 10px 0;
+        border-bottom: 1px solid #ebebeb;
+        padding: 10px 10px;
+    }
+    
+    .qna form label {
+        vertical-align: top;
+        width: 45px;
+        display: inline-block;
+    }
+    
+    .qna form input {
+        border: none;
+        background: #efecec;
+        padding: 6px;
+        width: 110px;
+    }
+    
+    .qna form input#qEmail{
+        width: 75px;
+    }
+    
+    .qna form input#qTel1,
+    .qna form input#qTel2,
+    .qna form input#qTel3 {
+        width: 40px;
+    }
+    .qna form input[type=file]{
+        background: none;
+        width: 100%;
+        margin: 10px 0;
+    
+    }
+    /* .qna span.dom {
+        display: inline-block;
+    } */
+    .qna form li .qQuestLB {
+        display: block;
+    }
+    .qna form textarea {
+        margin-top: 15px;
+        border: none;
+        background: #efecec;
+        padding: 6px;
+        width: 250px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    
+    
+}

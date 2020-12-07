@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* ver.20200728 */
+
+* {
+    margin: 0; padding: 0; 
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+    outline: none;
+    /*  font-size: 16px; color: #000; */
+}
+a {color: inherit; text-decoration: none;}
+ul, ol {list-style: none;}
+table {border-collapse: collapse; width: 100%; table-layout: fixed;}
+/* white-space: nowrap 사용할 시에 overflow 될 것을 대비하여, 표 구조를 fixed시킴 */
+/* white-space: nowrap; overflow: hidden; text-overflow: ellipsis */
+img {
+    /* 이미지는 필요할 때 판단해서 w:100% 설정할 것 */
+    max-width: 100%; 
+    vertical-align: middle; 
+    /* > img 아래에 1px의 빈틈 생기는 것을 막기위해 */
+    border: none;
+}
+h1, h2, h3, h4, h5, h6, pre, textarea {font-size: 100%;}
+strong, th {font-weight: normal;}
+address, em {font-style: normal;}
+/* 사전에 지정된 스타일을 버리고, 상속 받을수 있게 */
+header, nav, section, article, aside, footer, main, details, 
+figcaption, figure, hgroup, menu {display: block;}
+button, input, fieldset {border: none;}
+button[type=submit],
+button[type=button], 
+input[type=submit],
+input[type=button]
+ {cursor: pointer;}
+legend {display: none;}
+
+.cf:after, .cf:before {content: ''; display: block; clear: both;}
+.blind {
+    width: 0; height: 0; 
+    /* text-indent: -9999;  */
+    font-size: 0; overflow: hidden; line-height: 0;}
+/* 말 줄임표 */
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 바로가기 버튼 */
+.skip a {
+    display: block;
+    background: #000;    
+    color: #fff;
+    text-align: center;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: -100px;
+}
+
+.skip a:focus {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+}
+

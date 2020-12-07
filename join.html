@@ -1,0 +1,108 @@
+<div id="container">
+    <section id="join_section">
+        <div class="row">
+            <div class="login-box">
+                <h2>Join</h2>
+                <div>
+                    <form action="#" method="post">
+                        <fieldset class="cf">
+                            <legend>Join Box</legend>
+                            <div><span>*</span>:&nbsp;&nbsp;&nbsp;required item</div>
+                            <ul>
+                                <li>
+                                    <label for="firName">first name</label>
+                                    <input type="text" id="firName" class="small-input" required autofocus>
+                                    <label for="lastName">last name</label>
+                                    <input type="text" id="lastName" class="small-input" required>
+                                </li>
+                                <li>
+                                    <label for="email">email</label>
+                                    <input type="text" id="email" class="normal-input" required>
+                                    <!-- <span>@</span> -->
+                                    <span class="domain">@</span>
+                                    <select name="domain" id="domain">
+                                        <option value="#none">----------------</option>
+                                        <option value="google">google.com</option>
+                                        <option value="outlook">outlook.com</option>
+                                    </select>
+                                    <button type="button">Confirm</button>
+                                </li>
+                                <li>
+                                    <label for="pw">password</label>
+                                    <input type="password" id="pw" class="normal-input" required>
+                                    <label for="pwcheck">confirm password</label>
+                                    <input type="password" id="pwcheck" class="normal-input" required>
+                                </li>
+                                <li>
+                                    <label for="phoneNum1">phone number</label>
+                                    <input type="text" id="phoneNum1" class="small-input">
+                                    <span>-</span>
+                                    <input type="text" id="phoneNum2" class="small-input">
+                                    <span>-</span>
+                                    <input type="text" id="phoneNum3" class="small-input">
+                                </li>
+                                <li>
+                                    <label for="year" class="birth-year">date of birth</label>
+                                    <input type="text" class="small-input" placeholder="Month"
+                                        onfocus="this.placeholder=''" onblur="this.placeholder='Month'">
+                                    <!-- <input type="text" placeholder="Search" onfocus="this.placeholder=''"
+                                onblur="this.placeholder='Search'"> -->
+                                    <input type="text" class="small-input" placeholder="Date"
+                                        onfocus="this.placeholder=''" onblur="this.placeholder='Date'">
+                                    <input type="text" class="small-input" placeholder="Year"
+                                        onfocus="this.placeholder=''" onblur="this.placeholder='Year'">
+                                </li>
+                                <li>
+                                    <label for="" class="favor">favorites</label>
+                                    <input type="checkbox" id="game" name="favor">
+                                    <label for="game">game</label>
+                                    <input type="checkbox" id="movie" name="favor">
+                                    <label for="movie">movie</label>
+                                    <input type="checkbox" id="hiking" name="favor">
+                                    <label for="hiking">hiking</label>
+                                </li>
+                                <li>
+                                    <label for="">profile Image</label>
+                                    <label for="profile">Upload</label>
+                                    <input type="file" name="profile" id="profile"
+                                        accept="image/gif, image/jpeg, image/png">
+                                    <span>gif, jpeg, png</span>
+                                </li>
+                                <li>
+                                    <label for="description">description</label>
+                                    <textarea name="description" id="description" cols="" rows=""></textarea>
+                                </li>
+                                <li>
+                                    <button type="submit">register</button>
+                                    <button type="reset">cancel</button>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+
+<script>
+    // (function($){
+    //     var flagJoin = true;
+    //     initJoin()
+    //     function initJoin(){
+    //         if($('html').hasClass('mobile')&&flagJoin){
+    //             $('.gender_area label, .hobby_area label').after('<br>')
+    //             flagJoin = false;
+    //         } else if($('html').hasClass('pc')&&! flagJoin){
+    //             $('.gender_area, .hobby_area').find('<br>').remove()
+    //             flagJoin = true;
+
+    //         }
+    //     }
+    //     $(window).resize(function(){
+    //         initJoin()
+    //     })
+      
+    // })(jQuery)
+</script>

@@ -1,0 +1,92 @@
+<div id="container">
+    <section id="goods_section">
+        <div class="bg_h2">
+            <!-- <h2 class="category">BRAND</h2> -->
+            <h2 class="category">FAQ</h2>
+        </div>
+        <div class="row">
+            <div class="guide">
+                <span>Home</span>
+                <span>&gt;</span>
+                <span>FAQ</span>
+            </div>
+            <div class="faq">
+                <!-- <div class="see-all">[See all]</div> -->
+                <ul>
+                    <li class="faq-line on">
+                        <h4 class="faq-qst">
+                            How to upgrade items?
+                        </h4>
+                        <p class="faq-ans">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Soluta quisquam, repellendus porro libero qui molestias
+                            doloribus nobis labore incidunt? Architecto, odio excepturi
+                            atque porro deleniti culpa mollitia accusamus ad officiis?
+
+                        </p>
+                    </li>
+                    <li class="faq-line on">
+                        <h4 class="faq-qst">
+                            Where can I find a Technical Documentation?
+                        </h4>
+                        <p class="faq-ans">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Soluta quisquam, repellendus porro libero qui molestias
+                            doloribus nobis labore incidunt? Architecto, odio excepturi
+                            atque porro deleniti culpa mollitia accusamus ad officiis?
+                        </p>
+                    </li>
+                    <li class="faq-line on">
+                        <h4 class="faq-qst">
+                            How to get professional support?
+                        </h4>
+                        <p class="faq-ans">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Soluta quisquam, repellendus porro libero qui molestias
+                            doloribus nobis labore incidunt? Architecto, odio excepturi
+                            atque porro deleniti culpa mollitia accusamus ad officiis?
+                        </p>
+                    </li>
+                    <li class="faq-line on">
+                        <h4 class="faq-qst">
+                            How to join?
+                        </h4>
+                        <p class="faq-ans">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Soluta quisquam, repellendus porro libero qui molestias
+                            doloribus nobis labore incidunt? Architecto, odio excepturi
+                            atque porro deleniti culpa mollitia accusamus ad officiis?
+                        </p>
+                    </li>
+                    <li class="faq-line on">
+                        <h4 class="faq-qst">
+                            What can I do for you?
+                        </h4>
+                        <p class="faq-ans">
+                            - Stay in your house
+
+                            - Wash your hands
+
+                            - Be careful
+
+                            - Wear a mask
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+    // faq
+    let f = document.querySelectorAll('.faq-qst');
+    let faqLine = document.querySelectorAll('.faq-line');
+    const clickFaq = (index) => {
+        faqLine[index].classList.toggle('on');
+    }
+
+    f.forEach((a,index) => a.addEventListener('click', () => {
+        clickFaq(index);
+    })
+    )
+</script>

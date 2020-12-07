@@ -1,0 +1,377 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1024px) {
+   
+    .row { padding:0 10px }
+
+    .logo_nav #nav {
+        position: absolute; top: 50%; right: 10px; transform: translateY(-50%);
+        color: #fff;
+    }
+
+    .logo_nav #nav>ul>li>a {
+        display: inline-block;
+        position: relative;
+        margin-top: 20px;
+        /* padding: 5px 30px 10px;  */
+        padding: 5px 25px 10px;
+        font-size: 15px;
+        z-index: 9999;
+        opacity: 0.8;
+        transition: all 0.5s;
+    }
+
+
+    #main_section .slide-inner .main-text {
+        color: #fff;
+        font-size: 50px;
+        font-family: 'Nanum Pen Script', cursive;
+        text-transform: capitalize;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: default;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    #main_section .part1-wrap {
+        padding: 100px 0;
+    }
+
+    #main_section .part1-wrap .board {
+        display: block; margin: 0 auto 70px;
+        width: 80%;
+    }
+    #main_section .part1-wrap .board-video {
+        display: block; margin: 0 auto;
+        width: 80%;
+        padding-top:40%; position:relative;
+    }
+    
+
+    #main_section .part2-wrap button {
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid #fff;
+        background: none;
+        font-size: 18px;
+        padding: 10px 30px;
+        border-radius: 10px;
+        text-transform: capitalize;
+        letter-spacing: 3px;
+        color: white;
+        z-index: 99;
+    }
+
+    /* 이미지 박스 */
+    #main_section .part3 .box-wrap {
+        float: none; width:100%;
+    }
+
+    #main_section .part3 .box-img {
+        width:50%; float:left;
+        height: 330px;
+        position: relative;
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    /* 텍스트 박스 */
+    #main_section .part3 .box-text-wrap {
+        width:50%; float:left;
+        background-color: #fff;
+        height: 330px;
+        position: relative;
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+
+}
+
+@media screen and (max-width: 680px) {
+ 
+    .topmenu .icon_sns>a {
+        display: none;
+    }
+
+    .logo_nav .open_nav {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        color: #fff; display:block;
+    }
+    .logo_nav .close_nav {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        color: #fff; display:none;
+    }
+
+
+    /* nav 전부 복사해옴 */
+    .logo_nav #nav {
+        /* position: absolute; */
+        position: fixed;
+        /* top: 100%; */
+        top: 120px;
+        bottom: 0;
+        right: 0;
+        overflow-y: auto;
+        transform: translateY(0%);
+        color: #fff;
+        /* 임시로 맞춰둔 margin-top값 */
+        margin-top: 0px;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 0 20px 20px;
+        /* none 처리후 js 처리 */
+        display: none;
+    }
+
+    .logo_nav #nav>ul>li {
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+
+    .logo_nav #nav>ul>li>a {
+        display: inline-block;
+        position: relative;
+        /* margin-top: 20px; */
+        padding: 10px 30px 10px;
+        font-size: 15px;
+        z-index: 9999;
+        opacity: 0.8;
+        transition: all 0.5s;
+    }
+
+    .logo_nav #nav>ul>li:hover>a {
+        opacity: 1;
+        text-shadow: 0px 0px 5px #fff;
+    }
+
+    .logo_nav #nav>ul>li:last-child {
+        display: none;
+    }
+
+    .logo_nav #nav>ul>li:last-child>a {
+        display: inline-block;
+        /* margin-left: 15px; */
+        padding-left: 20px;
+        padding-right: 0;
+    }
+
+    .logo_nav #nav>ul>li>.depth2 {
+        display: none;
+        position: static;
+        top: 100%;
+        left: 0;
+        right: 0;
+        /* padding: 10px 0 10px; */
+        padding: 0px;
+        /* background-color: rgba(0,0,0,0.5); */
+        background-color: white;
+        border-radius: 5px;
+        z-index: 999999;
+        color: black;
+    }
+
+    .logo_nav #nav>ul>li>.depth2>li {
+        position: relative;
+    }
+
+    .logo_nav #nav>ul>li>.depth2>li>a {
+        display: inline-block;
+        padding: 5px 0;
+        font-size: 14px;
+        /* opacity: 0.5; */
+    }
+
+    .logo_nav #nav>ul>li>.depth2>li:hover>a {
+        /* opacity: 1; */
+        font-weight: bold;
+    }
+
+    .logo_nav #nav>ul>li>.depth2>li:hover>a:before {
+        /* content: 'ㆍ'; */
+        content: '\f0da';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        position: absolute;
+        top: 55%;
+        left: 13px;
+        font-size: 14px;
+        transform: translateY(-50%);
+    }
+
+    .logo_nav #nav>ul>li .detail {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0px;
+        padding-top: 10px;
+        width: 700px;
+        height: 210px;
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    .logo_nav #nav ul li .detail>li {
+        display: inline-block;
+        position: relative;
+    }
+
+    .logo_nav #nav ul li .detail>li:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background-color: white;
+        opacity: 0.5;
+    }
+
+    .logo_nav #nav ul li .detail>li:first-child:before {
+        display: none;
+    }
+
+
+    .logo_nav #nav>ul>li .detail>li>a {
+        display: inline-block;
+        margin-left: 0;
+        padding-left: 0;
+        font-size: 20px;
+        margin-right: 11px;
+        opacity: 0.5;
+    }
+
+    .logo_nav #nav>ul>li .detail>li:hover>a {
+        opacity: 1;
+    }
+
+    .logo_nav #nav ul li .detail>li a {
+        display: inline-block;
+        padding: 5px 30px;
+    }
+
+    .logo_nav #nav ul li .detail2>li a {
+        font-size: 14px;
+        opacity: 0.5;
+        position: relative;
+    }
+
+    .logo_nav #nav ul li .detail2>li a:hover:before {
+        content: '\f0a4';
+        position: absolute;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        top: 33%;
+        left: 10px;
+        color: #fff;
+    }
+
+    .logo_nav #nav ul li .detail2>li:hover a {
+        opacity: 1;
+    }
+
+    .logo_nav #nav ul li .detail2>li:last-child a {
+        margin-bottom: 10px;
+    }
+
+    
+    #main_section .part1-wrap .board {
+        display: block; margin: 0 auto 70px;
+        width: 95%;
+    }
+    #main_section .part1-wrap .board-video {
+        display: block; margin: 0 auto;
+        width: 95%;
+        padding-top:50%; position:relative;
+    }
+
+    #main_section .part2-wrap button {
+        position: absolute;
+        bottom: 7%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid #fff;
+        background: none;
+        font-size: 18px;
+        padding: 10px 30px;
+        border-radius: 10px;
+        text-transform: capitalize;
+        letter-spacing: 3px;
+        color: white;
+        z-index: 99;
+    }
+    
+
+    #main_section .part3 .box-img {
+        width:100%; float:none;
+        height: 330px;
+        position: relative;
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    /* 텍스트 박스 */
+    #main_section .part3 .box-text-wrap {
+        width:100%; float:none;
+        background-color: #fff;
+        height: 330px;
+        position: relative;
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+
+
+
+
+
+    .footer-mid {
+        background: rgb(46, 46, 46);
+        padding: 20px 0;
+        text-align: center;
+    }
+    .footer-mid .footer-right form legend {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    }
+
+    .footer-mid .footer-left {
+        float: none;    
+        margin-top: 10px;
+    }
+    
+    .footer-mid .footer-left h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-mid .footer-left p {
+        margin-bottom: 10px;
+    }
+    
+    .footer-mid .footer-right {
+        float: none;
+    }
+    .footer-mid .footer-right form legend {
+        /* inline-block 적용이 안됨 */
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    
+}
